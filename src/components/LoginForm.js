@@ -10,7 +10,7 @@ let LoginForm=({setIsLoggedIn})=>{
      }}>
       <label>Username:</label>
       <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}/>
-      <br>
+      <br/>
       <label>Password:</label>
       <input type="text" value={pass} onChange={(e)=>{setPass(e.target.value)}} />
       <br/>
