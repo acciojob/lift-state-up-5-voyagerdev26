@@ -8,7 +8,8 @@ const App = () => {
     <div>
         <h1>Parent Component</h1>
     
-        {isLoggedIn && <LoginForm setIsLoggedIn={setIsLoggedIn}/>}
+        {isLoggedIn || <LoginForm setIsLoggedIn={setIsLoggedIn}/>}
+        {isLoggedIn && <p>You are logged in!</p>}
     </div>
   )
 }
